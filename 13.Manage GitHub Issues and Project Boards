@@ -1,0 +1,7 @@
+commands:
+echo "Open the GitHub Issues page in your browser:"
+echo "https://github.com/anandajothi-2007/git-practical/issues"
+
+output:
+Open the GitHub Issues page in your browser:
+https://github.com/anandajothi-2007/git-practical/issues
