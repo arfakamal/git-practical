@@ -1,0 +1,45 @@
+commands:
+cd git-practical
+echo "Welcome to Git" > conflict-demo.txt
+git add conflict-demo.txt
+git commit -m "Add conflict demo file"
+git switch -c feature-conflict
+echo "Feature branch content" > conflict-demo.txt
+git add conflict-demo.txt
+git commit -m "Update file in feature branch"
+git switch main
+echo "Main branch content" > conflict-demo.txt
+git add conflict-demo.txt
+git commit -m "Update file in main branch"
+git merge feature-conflict
+git add conflict-demo.txt
+git commit -m "Resolve merge conflict"
+cat conflict-demo.txt
+git status
+
+output:
+[main xxxxxx] Add conflict demo file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 conflict-demo.txt
+
+Switched to a new branch 'feature-conflict'
+
+[feature-conflict xxxxxx] Update file in feature branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Switched to branch 'main'
+
+[main xxxxxx] Update file in main branch
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Auto-merging conflict-demo.txt
+CONFLICT (content): Merge conflict in conflict-demo.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+[main xxxxxx] Resolve merge conflict
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Main branch content
+
+On branch main
+nothing to commit, working tree clean
