@@ -1,0 +1,15 @@
+commands:
+cd git-practical
+echo "Welcome to Git and GitHub" > message.txt
+git status
+git add message.txt
+git status
+
+output:
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   message.txt
