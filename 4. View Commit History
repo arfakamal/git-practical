@@ -1,0 +1,14 @@
+commands:
+cd git-practical
+git log
+git log --oneline
+
+output:
+commit aa771ad...
+    Add first commit demo
+
+commit cf35c6f...
+    Add first commit demo
+
+aa771ad (HEAD -> main) Add first commit demo
+cf35c6f Add first commit demo
