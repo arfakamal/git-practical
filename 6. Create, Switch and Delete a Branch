@@ -1,0 +1,23 @@
+commands:
+cd git-practical
+git branch
+git branch feature-demo
+git switch feature-demo
+git branch
+git switch main
+git branch -d feature-demo
+git branch
+
+output:
+* main
+
+Switched to branch 'feature-demo'
+
+* feature-demo
+  main
+
+Switched to branch 'main'
+
+Deleted branch feature-demo (was d16a9a7).
+
+* main
