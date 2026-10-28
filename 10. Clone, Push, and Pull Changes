@@ -1,0 +1,26 @@
+commands:
+cd /workspaces
+git clone https://github.com/arfakamal/git-practical.git
+cd git-practical
+echo "Push and pull practical" > push-pull-demo.txt
+git add push-pull-demo.txt
+git commit -m "Add push pull demo"
+git push origin main
+git pull origin main
+cat push-pull-demo.txt
+
+output:
+Cloning into 'git-practical'...
+
+[main abc1234] Add push pull demo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 push-pull-demo.txt
+
+To https://github.com/arfakamal/git-practical.git
+   abc1234..def5678  main -> main
+
+From https://github.com/arfakamal/git-practical
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Push and pull practical
