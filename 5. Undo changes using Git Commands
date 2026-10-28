@@ -1,0 +1,20 @@
+commands:
+cd git-practical
+echo "Original content" > undo-demo.txt
+git add undo-demo.txt
+git commit -m "Add original content"
+
+echo "Unwanted change" > undo-demo.txt
+git restore undo-demo.txt
+cat undo-demo.txt
+git status
+
+output:
+[main d16a9a7] Add original content
+ 1 file changed, 1 insertion(+)
+ create mode 100644 undo-demo.txt
+
+Original content
+
+On branch main
+nothing to commit, working tree clean
