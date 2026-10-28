@@ -1,0 +1,14 @@
+commands:
+cd git-practical
+echo "First Git commit" > commit-demo.txt
+git add commit-demo.txt
+git commit -m "Add first commit demo"
+git log --oneline
+
+output:
+[main aa771ad] Add first commit demo
+ 1 file changed, 1 insertion(+)
+ create mode 100644 commit-demo.txt
+
+ aa771ad (HEAD -> main) Add first commit demo
+cf35c6f Add first commit demo
